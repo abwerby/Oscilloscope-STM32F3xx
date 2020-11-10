@@ -10,5 +10,9 @@ Oscilloscope based on stm32f303re and ili9486 3.5-inch TFT LCD screen
 4- Timebase: 1us/Div – 100us/Div  
 5- Sensitivity: 3.23mV
 
+## Image
+![alt text](https://github.com/abwerby/Oscilloscope-STM32F3xx/blob/master/image.jpg)
+
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
