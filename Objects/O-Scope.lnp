@@ -1,0 +1,20 @@
+--cpu=Cortex-M4.fp
+".\objects\adc_program.o"
+".\objects\dma_program.o"
+".\objects\gpio_program.o"
+".\objects\main.o"
+".\objects\rcc_program.o"
+".\objects\tft_prog.o"
+".\objects\stk_program.o"
+".\objects\tim2.o"
+".\objects\oscilloscope.o"
+".\objects\exti_program.o"
+".\objects\nvic_program.o"
+".\objects\syscfg_program.o"
+".\objects\dac_program.o"
+".\objects\startup_stm32f303xe.o"
+".\objects\system_stm32f3xx.o"
+--strict --scatter ".\Objects\O-Scope.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\O-Scope.map" -o .\Objects\O-Scope.axf
