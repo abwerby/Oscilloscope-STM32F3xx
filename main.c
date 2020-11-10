@@ -17,7 +17,7 @@ int main(void)
 
 	/* Test signal */
 	DAC_Soft_Write(DAC1, 2, 4000);
-	TIM_PWM(TIM2, CLK, 100000, 50);
+	TIM_PWM(TIM2, CLK, 400000, 50);
 
 		
 	/* Start ADC2 cycle Conversin */

@@ -27,31 +27,15 @@ Project File Date:  10/12/2020
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
-compiling oscilloscope.c...
-BIT_MATH.h(15): warning:  #1-D: last line of file ends without a newline
-  #endif 
+compiling main.c...
 STK_interface.h(21): warning:  #1-D: last line of file ends without a newline
-  #endif
-GPIO_private.h(42): warning:  #1-D: last line of file ends without a newline
   #endif
 ADC_private.h(131): warning:  #1-D: last line of file ends without a newline
   #endif
 ADC_interface.h(127): warning:  #1-D: last line of file ends without a newline
   #endif
-DMA_private.h(32): warning:  #1-D: last line of file ends without a newline
-  #endif
-DMA_interface.h(62): warning:  #1-D: last line of file ends without a newline
-  #endif
-TFT_Interface.h(19): warning:  #1295-D: Deprecated declaration TFT_Init - give arg types
-  void TFT_Init();
-TFT_Interface.h(20): warning:  #1295-D: Deprecated declaration TFT_Reset - give arg types
-  void TFT_Reset();
-EXTI_interface.h(37): warning:  #1-D: last line of file ends without a newline
-  #endif
-SYSCFG_interface.h(45): warning:  #1-D: last line of file ends without a newline
-  #endif
-NVIC_interface.h(17): warning:  #1-D: last line of file ends without a newline
-  #endif
+TIM2.h(67): warning:  #1-D: last line of file ends without a newline
+   #endif
 DAC_private.h(32): warning:  #1-D: last line of file ends without a newline
   #endif
 DAC_interface.h(67): warning:  #1-D: last line of file ends without a newline
@@ -84,12 +68,14 @@ oscilloscope.h(28): warning:  #1295-D: Deprecated declaration Change_Voffest - g
   void Change_Voffest();
 oscilloscope.h(33): warning:  #1295-D: Deprecated declaration Net - give arg types
   void Net();
-oscilloscope.c(319): warning:  #513-D: a value of type "uint16_t *" cannot be assigned to an entity of type "volatile uint32_t *"
-  	dma_config.Memory_Address = AdcArr;
-oscilloscope.c: 29 warnings, 0 errors
+main.c(49): warning:  #111-D: statement is unreachable
+  	return 0;
+main.c(25): warning:  #177-D: variable "f"  was declared but never referenced
+  	uint16_t f = 0;
+main.c: 22 warnings, 0 errors
 linking...
 Program Size: Code=10894 RO-data=12902 RW-data=160 ZI-data=9824  
-".\Objects\O-Scope.axf" - 0 Error(s), 29 Warning(s).
+".\Objects\O-Scope.axf" - 0 Error(s), 22 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -115,11 +101,11 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.4.0
 
    * Component: Keil.Standalone::Device:Startup:1.0.0
-      Source file:   Drivers\CMSIS\Device\ST\STM32F3xx\Source\Templates\arm\startup_stm32f303xe.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F3xx\Source\Templates\system_stm32f3xx.c
       Source file:   MDK\Device\Source\ARM\STM32F3xx_OPT.s
       Include file:  Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f3xx.h
-      Source file:   Drivers\CMSIS\Device\ST\STM32F3xx\Source\Templates\system_stm32f3xx.c
-Build Time Elapsed:  00:00:01
+      Source file:   Drivers\CMSIS\Device\ST\STM32F3xx\Source\Templates\arm\startup_stm32f303xe.s
+Build Time Elapsed:  00:00:00
 </pre>
 </body>
 </html>
